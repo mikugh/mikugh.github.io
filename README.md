@@ -5,6 +5,7 @@ My personal portfolio site. It's plain HTML, CSS and JavaScript, with no build s
 ## Edit
 
 - `index.html` holds all the content.
+- After changing `style.css` or `script.js`, raise the `?v=` number where `index.html` links to them. Browsers keep old copies for up to 10 minutes otherwise.
 - `style.css` holds the colours (the variables at the top), layout and dark mode.
 - To add a project, copy one `<article class="project">` block. Add `reverse` to its class to put the picture on the other side.
 

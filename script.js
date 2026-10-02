@@ -31,8 +31,9 @@ matchMedia('(min-width: 721px)').addEventListener('change', (e) => { if (e.match
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Fade sections in as they scroll into view
-const targets = document.querySelectorAll('.section, .project');
+// Fade cards in as they scroll into view. Whole sections are never hidden, so if this
+// script fails or a browser runs an old copy of it, headings and text still show.
+const targets = document.querySelectorAll('.project, .edu-card, .ai-card, .skill-group, .athlete');
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
