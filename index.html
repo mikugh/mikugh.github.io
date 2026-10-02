@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikael Granqvist · Developer</title>
+  <meta name="description" content="Portfolio of Mikael Granqvist: MSc student in Computer Engineering (Health Technology): client websites, data and machine learning, and projects built with AI tools.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f5f4a'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>MG</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Mikael<span>.</span></a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#ai">AI</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+      <p class="eyebrow">Developer · Athlete · Turku, Finland</p>
+      <h1>Hi, I'm Mikael Granqvist.</h1>
+      <p class="lead">
+        I'm a Master's student in Computer Engineering at Åbo Akademi University, specializing in
+        Health Technology. My work ranges from a trilingual website for a personal trainer to
+        blood pressure estimation from pulse signals with machine learning and a chess coach that runs
+        Stockfish in the browser.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://github.com/mikugh" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/mikael-g-granqvist" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="mikael.jpg" alt="Portrait of Mikael Granqvist" width="800" height="839">
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap section">
+      <h2 class="section-title"><span>01</span> About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a developer who learns through trial and error. Most of my projects start because I want
+            something that doesn't exist yet or is difficult to access, so I try to build it on my own.
+          </p>
+          <p>
+            I'm studying for a Master's in <strong>Computer Engineering</strong> with a specialization in
+            <strong>Health Technology</strong>. My studies cover machine learning, data science and cloud computing,
+            and my thesis work connects technology with sport and health.
+          </p>
+          <p>
+            I'm comfortable across the stack: <strong>JavaScript and Node.js</strong> on the web,
+            <strong>Python</strong> for scripting, APIs and data, <strong>Java</strong> and <strong>SQL</strong>,
+            and <strong>WordPress</strong> for client websites. I build with AI tools like
+            <strong>Claude Code</strong> every day, and I care about clear interfaces, honest numbers,
+            and software that explains itself.
+          </p>
+          <p>
+            Outside of code I'm a 400&nbsp;m sprinter and a three-time national relay champion. Twenty years of
+            sport have taught me discipline, patience and how to take feedback, and I bring the same habits to my work.
+          </p>
+          <p>
+            I'm currently looking for a <strong>trainee, junior or internship role</strong> in
+            <strong>software development</strong>, <strong>health technology</strong> or
+            <strong>data science and analytics</strong>, where I can ship real work and keep learning from experienced people.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span>Based in</span>Turku, Finland</li>
+          <li><span>Studying</span>MSc (Tech) Computer Engineering, Health Technology · Åbo Akademi</li>
+          <li><span>Fields</span>Software development, health tech, data science</li>
+          <li><span>Looking for</span>Trainee, junior or internship role</li>
+          <li><span>Off the clock</span>400&nbsp;m sprinter, Sibbo Vargarna</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <h2 class="section-title"><span>02</span> Selected projects</h2>
+
+      <article class="project">
+        <div class="project-art project-shot">
+          <a href="https://ptlena.com" target="_blank" rel="noopener"><img src="shot-ptlena.jpg" alt="Screenshot of the PT Lena home page" width="1100" height="688" loading="lazy"></a>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Client website · WordPress</p>
+          <h3>PT Lena</h3>
+          <p>
+            The live website for PT Lena, a personal trainer offering strength training and wellbeing coaching.
+            I designed and built it in WordPress with Elementor, and it's live at ptlena.com.
+          </p>
+          <ul class="highlights">
+            <li>Fully <strong>trilingual</strong>: every page is available in Swedish, Finnish and English.</li>
+            <li>Home, Services, About and Contact pages, with links to the client's Instagram and Facebook.</li>
+            <li>A responsive layout that works on phones, tablets and desktops.</li>
+          </ul>
+          <ul class="tags"><li>WordPress</li><li>Elementor</li><li>Multilingual</li><li>Responsive design</li></ul>
+          <div class="links">
+            <a href="https://ptlena.com" target="_blank" rel="noopener">Visit ptlena.com →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art project-shot">
+          <img src="ppg-raw-vs-processed.jpg" alt="A 10-second PPG recording before and after filtering" width="1000" height="801" loading="lazy">
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Machine learning · University of Turku</p>
+          <h3>Blood pressure estimation from PPG signals</h3>
+          <p>
+            Estimated systolic and diastolic blood pressure from photoplethysmogram (PPG) recordings, the optical pulse
+            signal that smartwatches and pulse oximeters measure. This was a pair project: the blood pressure estimation
+            was my part, and my partner worked on a separate analysis. The picture shows one 10-second recording before and after filtering.
+          </p>
+          <ul class="highlights">
+            <li><strong>Data:</strong> 29,599 PPG segments of 10 seconds at 125&nbsp;Hz, split into 23,675 for training and 5,924 for testing.</li>
+            <li><strong>Preprocessing</strong> in Python: a Butterworth band-pass filter, wavelet denoising and Gaussian smoothing.</li>
+            <li><strong>23 engineered features</strong> per segment: pulse shape (systolic and diastolic amplitude, augmentation index, rise and fall time, dicrotic notch), statistics (skewness, kurtosis, entropy), frequency features and signal derivatives.</li>
+            <li><strong>Models:</strong> support vector regression and gradient boosting. The best mean absolute error was 19.2&nbsp;mmHg for systolic and 7.5&nbsp;mmHg for diastolic pressure.</li>
+            <li><strong>Honest evaluation:</strong> the predictions stayed close to the average, with a concordance index of about 0.5, so the models had not learned the variation between recordings. I traced the likely causes to the features, model complexity and signal quality, and tested other feature sets, models and preprocessing.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>SciPy</li><li>Signal processing</li><li>Biosignal analysis</li><li>Feature engineering</li></ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-art project-shot">
+          <a href="https://github.com/mikugh/chess-analyser" target="_blank" rel="noopener"><img src="shot-chess.jpg" alt="Screenshot of the Chess Game Analyser showing a mistake, the best move and both players' accuracy" width="1100" height="811" loading="lazy"></a>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Web app · JavaScript</p>
+          <h3>Chess Game Analyser</h3>
+          <p>
+            Paste a game and Stockfish 19, compiled to WebAssembly and running in the browser, evaluates every position.
+            Each move gets a classification from Best to Blunder, and each player gets an accuracy score
+            computed with the same win-probability model Lichess uses.
+          </p>
+          <ul class="highlights">
+            <li>A <strong>coach</strong> that sorts your mistakes by <em>why</em> they happened: hanging pieces, missed threats, missed tactics. It turns the costliest patterns into questions to ask at the board.</li>
+            <li>Reads clock data to find habits such as blundering in instant moves or in time trouble.</li>
+            <li>Saved games are grouped by opening, with score and accuracy per opening and per game phase.</li>
+            <li>Interactive evaluation graph, best-move arrows, keyboard navigation, light and dark mode, and unit tests.</li>
+          </ul>
+          <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>WebAssembly</li><li>Stockfish</li><li>chess.js</li><li>node:test</li><li class="tag-ai">Built with Claude Code</li></ul>
+          <div class="links">
+            <a href="https://github.com/mikugh/chess-analyser" target="_blank" rel="noopener">Source code →</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="wrap section">
+      <h2 class="section-title"><span>03</span> Education &amp; research</h2>
+
+      <article class="project">
+        <div class="project-art art-agent" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <rect width="320" height="200" class="pose-bg"/>
+            <g class="agent-links"><path d="M160 104 L82 58M160 104 L238 58M160 104 L82 152M160 104 L238 152"/></g>
+            <g class="agent-nodes">
+              <circle cx="82" cy="58" r="14"/><circle cx="238" cy="58" r="14"/>
+              <circle cx="82" cy="152" r="14"/><circle cx="238" cy="152" r="14"/>
+            </g>
+            <circle class="agent-core" cx="160" cy="104" r="30"/>
+            <path class="agent-pulse" d="M138 104 L148 104 L153 92 L160 118 L166 98 L170 104 L182 104"/>
+            <rect class="wip" x="112" y="10" width="96" height="22" rx="11"/>
+            <text x="160" y="25" class="wip-text">In progress</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Master's thesis · Åbo Akademi</p>
+          <h3>Agentic AI systems in healthcare</h3>
+          <p>
+            <em>A Systematic Literature Review of Agentic AI Systems in Healthcare, their Evaluation Methods, and Explainability</em>
+          </p>
+          <p class="thesis-status">In progress, expected to be completed in January 2027.</p>
+          <ul class="tags"><li>Agentic AI</li><li>Explainable AI</li><li>Health technology</li></ul>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art art-pose" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <rect width="320" height="200" class="pose-bg"/>
+            <g class="track"><path d="M0 178h320M0 192h320"/></g>
+            <g transform="translate(-30 -28) scale(1.2)">
+            <g class="bones">
+              <path class="b1" d="M162 40 L158 62"/>
+              <path class="b2" d="M158 62 L150 112"/>
+              <path class="b3" d="M158 62 L176 84 L194 70"/>
+              <path class="b4" d="M158 62 L140 88 L126 104"/>
+              <path class="b5" d="M150 112 L184 134 L174 172"/>
+              <path class="b6" d="M150 112 L128 142 L98 130"/>
+            </g>
+            <g class="joints">
+              <circle cx="162" cy="38" r="7"/><circle cx="158" cy="62" r="4"/><circle cx="176" cy="84" r="4"/><circle cx="194" cy="70" r="4"/>
+              <circle cx="140" cy="88" r="4"/><circle cx="126" cy="104" r="4"/><circle cx="150" cy="112" r="4"/>
+              <circle cx="184" cy="134" r="4"/><circle cx="174" cy="172" r="4"/><circle cx="128" cy="142" r="4"/><circle cx="98" cy="130" r="4"/>
+            </g>
+            <path class="angle" d="M171 126 A16 16 0 0 1 180 149"/>
+            <text x="196" y="142" class="angle-text">152°</text>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Bachelor's thesis · Åbo Akademi · 2024</p>
+          <h3>Using OpenPose for sprint running analysis</h3>
+          <p>
+            Can a computer vision model measure sprint technique from ordinary video? In this literature-based thesis
+            I examined OpenPose, an open-source deep learning method that detects body keypoints in images and video,
+            and asked whether it can measure the joint angles that matter in sprinting.
+          </p>
+          <ul class="highlights">
+            <li>Covered sprint biomechanics, including hip, knee and ankle angles in the block start, acceleration and maximum-velocity phases.</li>
+            <li>Explained the deep learning underneath: neural networks, convolutional networks, and OpenPose's architecture with confidence maps and part affinity fields.</li>
+            <li>Reviewed three studies of OpenPose on running: sprints filmed with a smartphone, hurdling across network backbones (VGG19 and MobileNet, compared by RMSE), and treadmill running compared with marker-based motion capture.</li>
+            <li><strong>Conclusion:</strong> OpenPose is not yet accurate enough for sprint analysis. Accuracy drops as speed rises, even from 2.78 to 3.33&nbsp;m/s, and missing values and false positives make joint angles unreliable.</li>
+          </ul>
+          <ul class="tags"><li>Computer vision</li><li>Deep learning</li><li>CNNs</li><li>Pose estimation</li><li>Sports biomechanics</li></ul>
+          <div class="links">
+            <a href="thesis-openpose-sprint.pdf" target="_blank" rel="noopener">Read the thesis (PDF, in Swedish) →</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <p class="edu-date">2024 – present</p>
+          <h3>MSc (Tech) Computer Engineering</h3>
+          <p class="edu-school">Åbo Akademi University · Specialization in Health Technology</p>
+          <ul class="highlights">
+            <li><strong>Thesis (in progress):</strong> <em>A Systematic Literature Review of Agentic AI Systems in Healthcare, their Evaluation Methods, and Explainability</em>.</li>
+            <li>Specialization in Health Technology, with courses at Åbo Akademi University and the University of Turku.</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date">2021 – 2024</p>
+          <h3>BSc (Tech) Computer Engineering</h3>
+          <p class="edu-school">Åbo Akademi University</p>
+          <ul class="highlights">
+            <li>Thesis: <em>Using OpenPose for sprint running analysis</em> (2024).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Relevant coursework</h3>
+      <ul class="course-list">
+        <li><span class="course-name">Machine Learning Health Technology Project</span><span class="uni">University of Turku</span><span class="course-desc">Blood pressure estimation from PPG data with machine learning (see <a href="#projects">Selected projects</a>).</span></li>
+        <li><span class="course-name">Analytics for Health Wearables</span><span class="uni">University of Turku</span><span class="course-desc">Signal processing, peak detection, signal quality assessment and arrhythmia detection.</span></li>
+        <li><span class="course-name">Programming for Health Wearables</span><span class="uni">University of Turku</span><span class="course-desc">A Bluetooth step counter on an nRF52 board with an LSM6DSO motion sensor (see below).</span></li>
+        <li><span class="course-name">Data Science</span><span class="uni">Åbo Akademi</span><span class="course-desc">Exploratory data analysis, data management, data modelling, machine learning and data visualization.</span></li>
+        <li><span class="course-name">Cloud Computing</span><span class="uni">Åbo Akademi</span><span class="course-desc">AWS instances, load balancing, auto-scaling and cloud databases.</span></li>
+        <li><span class="course-name">Software Testing</span><span class="uni">Åbo Akademi</span><span class="course-desc">Testing at every level of the development process, with JUnit and Robot Framework.</span></li>
+        <li><span class="course-name">Project Course</span><span class="uni">Åbo Akademi</span><span class="course-desc">A website for flea markets in Turku, built in a team of six and showcased at ICT Showroom 2025.</span></li>
+      </ul>
+
+      <h3 class="subsection-title">Selected course projects</h3>
+      <div class="course-grid">
+        <div class="edu-card">
+          <p class="edu-date course-kicker">Programming for Health Wearables <span class="uni">University of Turku</span></p>
+          <h3>Bluetooth step counter on nRF52</h3>
+          <p class="course-lead">A pedometer on a Nordic nRF52 board with an LSM6DSO motion sensor that streams the live step count to a smartphone over Bluetooth Low Energy. Built in a team of three.</p>
+          <ul class="highlights">
+            <li>Integrated ST's pedometer driver over I²C (TWI) and verified the step count in the debugger before adding Bluetooth.</li>
+            <li>Moved the step counter onto Nordic's UART-over-BLE template, and the phone showed the count live in nRF Connect and nRF Toolbox.</li>
+          </ul>
+          <ul class="tags"><li>C</li><li>nRF52</li><li>Bluetooth LE</li><li>I²C</li><li>Sensors</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker">System Safety <span class="uni">Åbo Akademi</span></p>
+          <h3>STPA analysis of the Saudia Flight 163 accident</h3>
+          <p class="course-lead">Applied System-Theoretic Process Analysis to the 1980 cargo fire in which all 301 people on board died, even though the aircraft landed safely.</p>
+          <ul class="highlights">
+            <li>Modelled the control structure (flight crew, cabin crew, air traffic control, airline, manufacturer and FAA) and defined three hazards with their safety constraints.</li>
+            <li>Traced the unsafe control actions to causes outside the cockpit, such as a cargo fire rating extended to a larger compartment without proper testing, and proposed safety controls.</li>
+          </ul>
+          <ul class="tags"><li>STPA</li><li>System safety</li><li>Hazard analysis</li><li>Root cause analysis</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker">Software Testing <span class="uni">Åbo Akademi</span></p>
+          <h3>Coverage-driven test design</h3>
+          <p class="course-lead">Designed tests for a tax calculation method from its control-flow graph, then measured how strong they were with mutation testing.</p>
+          <ul class="highlights">
+            <li>Derived edge, edge-pair, def-use and predicate coverage requirements, and wrote test cases with expected outputs that cover them.</li>
+            <li>Ran PIT mutation testing to find mutants the tests failed to kill.</li>
+          </ul>
+          <ul class="tags"><li>Java</li><li>Control-flow graphs</li><li>Coverage criteria</li><li>Mutation testing</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker">Privacy and Security for Software Systems <span class="uni">University of Turku</span></p>
+          <h3>Privacy and security in software design</h3>
+          <p class="course-lead">Two assignment sets on how regulation and security practice shape the way software is built.</p>
+          <ul class="highlights">
+            <li>Identified the GDPR articles that matter most to engineers, such as privacy by design and the right to erasure, and reviewed consent banners and dark patterns on real websites, including their third-party network requests.</li>
+            <li>Covered SAML, OAuth 2.0 and API keys, DevSecOps with CVE, CWE and CVSS, and the CrowdStrike and SolarWinds supply-chain incidents.</li>
+          </ul>
+          <ul class="tags"><li>GDPR</li><li>Privacy by design</li><li>OAuth 2.0</li><li>DevSecOps</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="wrap section">
+      <h2 class="section-title"><span>04</span> Experience</h2>
+      <p class="section-lead">
+        Alongside my studies I have worked in moving since 2020, and since July 2026 I have run my own business.
+      </p>
+      <div class="edu-grid exp-grid">
+        <div class="edu-card">
+          <p class="edu-date">Jul 2026 – present</p>
+          <h3>Mover, sole trader</h3>
+          <p class="edu-school">Tmi Granqvist Mikael</p>
+          <ul class="highlights">
+            <li>Work as a self-employed subcontractor for moving companies on residential and commercial moves.</li>
+            <li>Run the business myself, including scheduling and invoicing.</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date">Oct 2020 – Jan 2025</p>
+          <h3>Mover</h3>
+          <p class="edu-school">ELD Muutot</p>
+          <ul class="highlights">
+            <li>Loaded and unloaded customers' belongings safely and served customers on moving day.</li>
+            <li>Worked in teams to finish jobs efficiently.</li>
+            <li>Trained new employees in work procedures and safe practices.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="wrap section">
+      <h2 class="section-title"><span>05</span> Building with AI</h2>
+      <p class="section-lead">
+        I use <strong>Claude Code</strong>, Anthropic's AI coding agent, as a pair programmer.
+        The Chess Game Analyser was built with it, and so was this site.
+        AI makes me faster, but I still make the decisions and I check the results.
+      </p>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <span class="ai-step">Plan</span>
+          <h3>I decide what to build</h3>
+          <p>I break features into clear tasks and explain the goal and the constraints. A precise brief gets far better results than a vague one.</p>
+        </div>
+        <div class="ai-card">
+          <span class="ai-step">Review</span>
+          <h3>I read every change</h3>
+          <p>The agent writes a first draft and I review the diff the way I would a colleague's pull request. Nothing ships that I don't understand.</p>
+        </div>
+        <div class="ai-card">
+          <span class="ai-step">Verify</span>
+          <h3>Tests are the guardrails</h3>
+          <p>AI-written code has to pass the tests. The chess analyser's scoring, openings and coach are covered by unit tests, and I check results against trusted sources such as Lichess's accuracy model.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap section">
+      <h2 class="section-title"><span>06</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming languages</h3>
+          <ul class="tags"><li>Python</li><li>Java</li><li>SQL</li><li>JavaScript</li><li>C</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; machine learning</h3>
+          <ul class="tags"><li>Exploratory data analysis</li><li>Data modeling</li><li>Machine learning</li><li>Signal processing</li><li>Feature engineering</li><li>scikit-learn</li><li>pandas</li><li>Data visualization</li><li>Computer vision</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web &amp; platforms</h3>
+          <ul class="tags"><li>Node.js</li><li>Flask</li><li>WordPress</li><li>Elementor</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; tools</h3>
+          <ul class="tags"><li>AWS</li><li>Nordic nRF52 &amp; BLE</li><li>Git &amp; GitHub</li><li>JUnit</li><li>Robot Framework</li><li>pytest</li><li>node:test</li><li>VS Code</li><li>Microsoft 365</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI tools</h3>
+          <ul class="tags"><li class="tag-ai">Claude Code</li><li>Claude</li><li>ChatGPT</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Spoken languages</h3>
+          <ul class="tags"><li>Swedish · native</li><li>Finnish · native</li><li>English · fluent</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATHLETE -->
+    <section id="athlete" class="wrap section">
+      <h2 class="section-title"><span>07</span> Beyond the code</h2>
+      <div class="athlete">
+        <figure class="athlete-photo">
+          <img src="mikael-400m.jpg" alt="Mikael running the 4×400&nbsp;m relay for Sibbo Vargarna, baton in hand" width="800" height="1137" loading="lazy">
+          <figcaption>Photo © Ellen Koskinen</figcaption>
+        </figure>
+        <div class="athlete-main">
+          <div class="athlete-text">
+            <p class="athlete-kicker">Track &amp; field · 400&nbsp;m &amp; 200&nbsp;m</p>
+            <h3>What one lap of the track taught me about work</h3>
+            <p>
+              I've done sport since I was seven: football until I was 15, then track and field.
+              Today I'm a 400&nbsp;m sprinter for <strong>Sibbo Vargarna</strong>. I've run in the 400&nbsp;m final
+              at the Finnish national championships, and I've won the national 4×400&nbsp;m relay title three times with my club.
+            </p>
+            <p>
+              The 400&nbsp;m rewards months of steady, unglamorous training. A relay only works if every leg delivers
+              and every handover is clean. I bring the same habits to software: consistent progress, trust in
+              the team, and staying sharp under pressure.
+            </p>
+          </div>
+          <ul class="stats">
+            <li><strong>3×</strong><span>National champion, 4×400&nbsp;m relay</span></li>
+            <li><strong>48.08</strong><span>400&nbsp;m personal best</span></li>
+            <li><strong>Finalist</strong><span>Finnish championships, 400&nbsp;m</span></li>
+            <li><strong>20 yrs</strong><span>in sport, 12 in track &amp; field</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section contact">
+      <h2 class="section-title"><span>08</span> Contact</h2>
+      <p class="contact-lead">
+        Have a trainee, junior or internship role in mind? I'd love to hear from you.<br>
+        <a class="contact-email" href="mailto:mikael.granqvist12@gmail.com">mikael.granqvist12@gmail.com</a>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:mikael.granqvist12@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/mikael-g-granqvist" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/mikugh" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Mikael Granqvist</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
