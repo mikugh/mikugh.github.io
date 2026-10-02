@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikael Granqvist · Utvecklare</title>
+  <meta name="description" content="Portfolio för Mikael Granqvist, diplomingenjörsstuderande i datateknik med inriktning på hälsoteknologi: kundwebbplatser, data och maskininlärning samt projekt byggda med AI-verktyg.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f5f4a'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>MG</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="en" href="https://mikugh.github.io/">
+  <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
+  <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
+  <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
+  <link rel="stylesheet" href="../style.css?v=3">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Mikael<span>.</span></a>
+      <nav aria-label="Huvudmeny" id="site-nav">
+        <a href="#about">Om mig</a>
+        <a href="#projects">Projekt</a>
+        <a href="#education">Utbildning</a>
+        <a href="#experience">Erfarenhet</a>
+        <a href="#ai">AI</a>
+        <a href="#skills">Färdigheter</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <div class="lang-switch" aria-label="Språk">
+        <a href="../" hreflang="en" lang="en">EN</a>
+        <a href="./" hreflang="sv" lang="sv" aria-current="page">SV</a>
+        <a href="../fi/" hreflang="fi" lang="fi">FI</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Växla mörkt läge">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Öppna menyn" data-open-label="Öppna menyn" data-close-label="Stäng menyn" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+      <p class="eyebrow">Utvecklare · Idrottare · Åbo, Finland</p>
+      <h1>Hej, jag är Mikael Granqvist.</h1>
+      <p class="lead">
+        Jag studerar till diplomingenjör i datateknik vid Åbo Akademi med inriktning på hälsoteknologi.
+        Mina projekt sträcker sig från en trespråkig webbplats för en personlig tränare till uppskattning
+        av blodtryck från pulssignaler med maskininlärning och en schacktränare som kör Stockfish i webbläsaren.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Se mina projekt</a>
+        <a class="btn" href="https://github.com/mikugh" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/mikael-g-granqvist" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="../mikael.jpg" alt="Porträtt av Mikael Granqvist" width="800" height="839">
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap section">
+      <h2 class="section-title"><span>01</span> Om mig</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Jag är en utvecklare som lär mig genom att pröva mig fram. De flesta av mina projekt börjar med att
+            jag vill ha något som inte finns ännu eller som är svårt att komma åt, så jag försöker bygga det själv.
+          </p>
+          <p>
+            Jag studerar till diplomingenjör i <strong>datateknik</strong> med inriktning på
+            <strong>hälsoteknologi</strong>. Mina studier omfattar maskininlärning, datavetenskap och molntjänster,
+            och mina examensarbeten förenar teknik med idrott och hälsa.
+          </p>
+          <p>
+            Jag rör mig smidigt i hela stacken: <strong>JavaScript och Node.js</strong> för webben,
+            <strong>Python</strong> för skript, API:er och data, <strong>Java</strong> och <strong>SQL</strong>,
+            samt <strong>WordPress</strong> för kundwebbplatser. Jag bygger med AI-verktyg som
+            <strong>Claude Code</strong> varje dag, och jag värdesätter tydliga gränssnitt, ärliga siffror
+            och programvara som förklarar sig själv.
+          </p>
+          <p>
+            Vid sidan av koden är jag 400&nbsp;m-löpare och trefaldig finländsk mästare i stafett. Tjugo år av
+            idrott har lärt mig disciplin, tålamod och att ta emot feedback, och samma vanor tar jag med mig till mitt arbete.
+          </p>
+          <p>
+            Just nu söker jag en <strong>trainee-, junior- eller praktikplats</strong> inom
+            <strong>programvaruutveckling</strong>, <strong>hälsoteknologi</strong> eller
+            <strong>datavetenskap och dataanalys</strong>, där jag får göra verkligt arbete och fortsätta lära mig av erfarna kolleger.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span>Bor i</span>Åbo, Finland</li>
+          <li><span>Studerar</span>DI i datateknik, hälsoteknologi · Åbo Akademi</li>
+          <li><span>Områden</span>Programvaruutveckling, hälsoteknologi, datavetenskap</li>
+          <li><span>Söker</span>Trainee-, junior- eller praktikplats</li>
+          <li><span>På fritiden</span>400&nbsp;m-löpare, Sibbo Vargarna</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <h2 class="section-title"><span>02</span> Utvalda projekt</h2>
+
+      <article class="project">
+        <div class="project-art project-shot">
+          <a href="https://ptlena.com" target="_blank" rel="noopener"><img src="../shot-ptlena.jpg" alt="Skärmbild av PT Lenas startsida" width="1100" height="688" loading="lazy"></a>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Kundwebbplats · WordPress</p>
+          <h3>PT Lena</h3>
+          <p>
+            Webbplatsen för PT Lena, en personlig tränare som erbjuder styrketräning och coachning för välmående.
+            Jag designade och byggde den i WordPress med Elementor, och den finns på ptlena.com.
+          </p>
+          <ul class="highlights">
+            <li>Helt <strong>trespråkig</strong>: varje sida finns på svenska, finska och engelska.</li>
+            <li>Sidorna Hem, Tjänster, Om och Kontakt, med länkar till kundens Instagram och Facebook.</li>
+            <li>En responsiv layout som fungerar på mobiler, surfplattor och datorer.</li>
+          </ul>
+          <ul class="tags"><li>WordPress</li><li>Elementor</li><li>Flerspråkig</li><li>Responsiv design</li></ul>
+          <div class="links">
+            <a href="https://ptlena.com" target="_blank" rel="noopener">Besök ptlena.com →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art project-shot">
+          <img src="../ppg-raw-vs-processed.jpg" alt="En 10 sekunder lång PPG-mätning före och efter filtrering" width="1000" height="801" loading="lazy">
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Maskininlärning · Åbo universitet</p>
+          <h3>Uppskattning av blodtryck från PPG-signaler</h3>
+          <p>
+            Uppskattade systoliskt och diastoliskt blodtryck från fotopletysmografiska (PPG) mätningar, den optiska
+            pulssignal som smartklockor och pulsoximetrar mäter. Det här var ett parprojekt: blodtrycksuppskattningen
+            var min del, och min partner gjorde en separat analys. Bilden visar en 10 sekunder lång mätning före och efter filtrering.
+          </p>
+          <ul class="highlights">
+            <li><strong>Data:</strong> 29&nbsp;599 PPG-segment på 10 sekunder vid 125&nbsp;Hz, uppdelade i 23&nbsp;675 för träning och 5&nbsp;924 för testning.</li>
+            <li><strong>Förbehandling</strong> i Python: ett Butterworth-bandpassfilter, wavelet-baserad brusreducering och gaussisk utjämning.</li>
+            <li><strong>23 framtagna särdrag</strong> per segment: pulsform (systolisk och diastolisk amplitud, augmentationsindex, stig- och falltid, dikrotisk incisur), statistik (skevhet, kurtosis, entropi), frekvenssärdrag och signalderivator.</li>
+            <li><strong>Modeller:</strong> stödvektorregression och gradient boosting. Det bästa medelabsolutfelet var 19,2&nbsp;mmHg för systoliskt och 7,5&nbsp;mmHg för diastoliskt tryck.</li>
+            <li><strong>Ärlig utvärdering:</strong> förutsägelserna höll sig nära medelvärdet, med ett konkordansindex på cirka 0,5, så modellerna hade inte lärt sig variationen mellan mätningarna. Jag spårade de troliga orsakerna till särdragen, modellernas komplexitet och signalkvaliteten, och testade andra särdragsuppsättningar, modeller och förbehandlingar.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>SciPy</li><li>Signalbehandling</li><li>Biosignalanalys</li><li>Särdragsutvinning</li></ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-art project-shot">
+          <a href="https://github.com/mikugh/chess-analyser" target="_blank" rel="noopener"><img src="../shot-chess.jpg" alt="Skärmbild av Chess Game Analyser som visar ett misstag, det bästa draget och båda spelarnas precision" width="1100" height="811" loading="lazy"></a>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Webbapp · JavaScript</p>
+          <h3>Chess Game Analyser</h3>
+          <p>
+            Klistra in ett parti så utvärderar Stockfish 19, kompilerad till WebAssembly och körd i webbläsaren, varje ställning.
+            Varje drag klassificeras från bästa drag till blunder, och varje spelare får ett precisionsvärde som
+            räknas ut med samma vinstsannolikhetsmodell som Lichess använder.
+          </p>
+          <ul class="highlights">
+            <li>En <strong>tränare</strong> som sorterar dina misstag efter <em>varför</em> de hände: hängande pjäser, missade hot, missade taktiker. De dyraste mönstren blir frågor att ställa sig vid brädet.</li>
+            <li>Läser klockdata för att hitta vanor som att blundra i snabba drag eller i tidsnöd.</li>
+            <li>Sparade partier grupperas efter öppning, med resultat och precision per öppning och per spelfas.</li>
+            <li>Interaktiv värderingsgraf, pilar för bästa drag, tangentbordsnavigering, ljust och mörkt läge samt enhetstester.</li>
+          </ul>
+          <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>WebAssembly</li><li>Stockfish</li><li>chess.js</li><li>node:test</li><li class="tag-ai">Byggd med Claude Code</li></ul>
+          <div class="links">
+            <a href="https://github.com/mikugh/chess-analyser" target="_blank" rel="noopener">Källkod →</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="wrap section">
+      <h2 class="section-title"><span>03</span> Utbildning &amp; forskning</h2>
+
+      <article class="project">
+        <div class="project-art art-agent" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <rect width="320" height="200" class="pose-bg"/>
+            <g class="agent-links"><path d="M160 104 L82 58M160 104 L238 58M160 104 L82 152M160 104 L238 152"/></g>
+            <g class="agent-nodes">
+              <circle cx="82" cy="58" r="14"/><circle cx="238" cy="58" r="14"/>
+              <circle cx="82" cy="152" r="14"/><circle cx="238" cy="152" r="14"/>
+            </g>
+            <circle class="agent-core" cx="160" cy="104" r="30"/>
+            <path class="agent-pulse" d="M138 104 L148 104 L153 92 L160 118 L166 98 L170 104 L182 104"/>
+            <rect class="wip" x="112" y="10" width="96" height="22" rx="11"/>
+            <text x="160" y="25" class="wip-text">Pågår</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Diplomarbete · Åbo Akademi</p>
+          <h3>Agentiska AI-system inom hälso- och sjukvården</h3>
+          <p>
+            <em lang="en">A Systematic Literature Review of Agentic AI Systems in Healthcare, their Evaluation Methods, and Explainability</em>
+          </p>
+          <p class="thesis-status">Pågår, beräknas bli klart i januari 2027.</p>
+          <ul class="tags"><li>Agentisk AI</li><li>Förklarbar AI</li><li>Hälsoteknologi</li></ul>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art art-pose" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <rect width="320" height="200" class="pose-bg"/>
+            <g class="track"><path d="M0 178h320M0 192h320"/></g>
+            <g transform="translate(-30 -28) scale(1.2)">
+            <g class="bones">
+              <path class="b1" d="M162 40 L158 62"/>
+              <path class="b2" d="M158 62 L150 112"/>
+              <path class="b3" d="M158 62 L176 84 L194 70"/>
+              <path class="b4" d="M158 62 L140 88 L126 104"/>
+              <path class="b5" d="M150 112 L184 134 L174 172"/>
+              <path class="b6" d="M150 112 L128 142 L98 130"/>
+            </g>
+            <g class="joints">
+              <circle cx="162" cy="38" r="7"/><circle cx="158" cy="62" r="4"/><circle cx="176" cy="84" r="4"/><circle cx="194" cy="70" r="4"/>
+              <circle cx="140" cy="88" r="4"/><circle cx="126" cy="104" r="4"/><circle cx="150" cy="112" r="4"/>
+              <circle cx="184" cy="134" r="4"/><circle cx="174" cy="172" r="4"/><circle cx="128" cy="142" r="4"/><circle cx="98" cy="130" r="4"/>
+            </g>
+            <path class="angle" d="M171 126 A16 16 0 0 1 180 149"/>
+            <text x="196" y="142" class="angle-text">152°</text>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Kandidatarbete · Åbo Akademi · 2024</p>
+          <h3>Användning av OpenPose för analys av sprintlöpning</h3>
+          <p>
+            Kan en datorseendemodell mäta sprintteknik från vanlig video? I det här litteraturbaserade arbetet
+            undersökte jag OpenPose, en djupinlärningsmetod med öppen källkod som detekterar kroppens nyckelpunkter
+            i bilder och video, och frågade mig om den kan mäta de ledvinklar som är avgörande i sprintlöpning.
+          </p>
+          <ul class="highlights">
+            <li>Behandlade sprintlöpningens biomekanik, bland annat höft-, knä- och vristledernas vinklar i blockstarten, accelerationsfasen och den maximala hastighetsfasen.</li>
+            <li>Förklarade djupinlärningen bakom: neurala nätverk, faltningsnätverk och OpenPoses arkitektur med färgdiagram och samhörighetsfält.</li>
+            <li>Granskade tre studier av OpenPose inom löpning: sprintlöpning filmad med smarttelefon, häcklöpning med olika nätverksarkitekturer (VGG19 och MobileNet, jämförda med RMSE) och löpning på löpband jämförd med markörbaserad rörelseanalys.</li>
+            <li><strong>Slutsats:</strong> OpenPose är ännu inte tillräckligt noggrann för analys av sprintlöpning. Noggrannheten sjunker när hastigheten ökar, redan från 2,78 till 3,33&nbsp;m/s, och borttappade och falskt positiva värden gör ledvinklarna opålitliga.</li>
+          </ul>
+          <ul class="tags"><li>Datorseende</li><li>Djupinlärning</li><li>Faltningsnätverk</li><li>Kroppsställningsestimering</li><li>Idrottsbiomekanik</li></ul>
+          <div class="links">
+            <a href="../thesis-openpose-sprint.pdf" target="_blank" rel="noopener">Läs arbetet (PDF) →</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <p class="edu-date">2024 – pågående</p>
+          <h3>Diplomingenjör (DI), datateknik</h3>
+          <p class="edu-school">Åbo Akademi · Inriktning: hälsoteknologi</p>
+          <ul class="highlights">
+            <li><strong>Diplomarbete (pågår):</strong> <em lang="en">A Systematic Literature Review of Agentic AI Systems in Healthcare, their Evaluation Methods, and Explainability</em>.</li>
+            <li>Inriktning på hälsoteknologi, med kurser vid Åbo Akademi och Åbo universitet.</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date">2021 – 2024</p>
+          <h3>Teknologie kandidat (TkK), datateknik</h3>
+          <p class="edu-school">Åbo Akademi</p>
+          <ul class="highlights">
+            <li>Kandidatarbete: <em>Användning av OpenPose för analys av sprintlöpning</em> (2024).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Relevanta kurser</h3>
+      <ul class="course-list">
+        <li><span class="course-name" lang="en">Machine Learning Health Technology Project</span><span class="uni">Åbo universitet</span><span class="course-desc">Uppskattning av blodtryck från PPG-data med maskininlärning (se <a href="#projects">Utvalda projekt</a>).</span></li>
+        <li><span class="course-name" lang="en">Analytics for Health Wearables</span><span class="uni">Åbo universitet</span><span class="course-desc">Signalbehandling, toppdetektering, bedömning av signalkvalitet och detektering av arytmier.</span></li>
+        <li><span class="course-name" lang="en">Programming for Health Wearables</span><span class="uni">Åbo universitet</span><span class="course-desc">En stegräknare med Bluetooth på ett nRF52-kort med en LSM6DSO-rörelsesensor (se nedan).</span></li>
+        <li><span class="course-name" lang="en">Data Science</span><span class="uni">Åbo Akademi</span><span class="course-desc">Explorativ dataanalys, datahantering, datamodellering, maskininlärning och datavisualisering.</span></li>
+        <li><span class="course-name" lang="en">Cloud Computing</span><span class="uni">Åbo Akademi</span><span class="course-desc">AWS-instanser, lastbalansering, automatisk skalning och molndatabaser.</span></li>
+        <li><span class="course-name" lang="en">Software Testing</span><span class="uni">Åbo Akademi</span><span class="course-desc">Testning på alla nivåer av utvecklingsprocessen, med JUnit och Robot Framework.</span></li>
+        <li><span class="course-name" lang="en">Project Course</span><span class="uni">Åbo Akademi</span><span class="course-desc">En webbplats för loppmarknader i Åbo, byggd i ett team på sex personer och visad på ICT Showroom 2025.</span></li>
+      </ul>
+
+      <h3 class="subsection-title">Utvalda kursprojekt</h3>
+      <div class="course-grid">
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">Programming for Health Wearables</span> <span class="uni">Åbo universitet</span></p>
+          <h3>Bluetooth-stegräknare på nRF52</h3>
+          <p class="course-lead">En stegräknare på ett Nordic nRF52-kort med en LSM6DSO-rörelsesensor som skickar antalet steg i realtid till en smarttelefon via Bluetooth Low Energy. Byggd i ett team på tre personer.</p>
+          <ul class="highlights">
+            <li>Integrerade ST:s stegräknardrivrutin via I²C (TWI) och verifierade stegräkningen i debuggern innan Bluetooth lades till.</li>
+            <li>Flyttade stegräknaren till Nordics UART-över-BLE-mall, och telefonen visade stegen i realtid i nRF Connect och nRF Toolbox.</li>
+          </ul>
+          <ul class="tags"><li>C</li><li>nRF52</li><li>Bluetooth LE</li><li>I²C</li><li>Sensorer</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">System Safety</span> <span class="uni">Åbo Akademi</span></p>
+          <h3>STPA-analys av olyckan med Saudia Flight 163</h3>
+          <p class="course-lead">Tillämpade System-Theoretic Process Analysis på lastrumsbranden 1980, där alla 301 personer ombord omkom trots att flygplanet landade säkert.</p>
+          <ul class="highlights">
+            <li>Modellerade kontrollstrukturen (flygbesättning, kabinpersonal, flygledning, flygbolag, tillverkare och FAA) och definierade tre faror med tillhörande säkerhetsvillkor.</li>
+            <li>Spårade de osäkra styråtgärderna till orsaker utanför cockpit, till exempel en brandklassning för lastrum som utvidgats till ett större utrymme utan ordentlig testning, och föreslog säkerhetsåtgärder.</li>
+          </ul>
+          <ul class="tags"><li>STPA</li><li>Systemsäkerhet</li><li>Riskanalys</li><li>Rotorsaksanalys</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">Software Testing</span> <span class="uni">Åbo Akademi</span></p>
+          <h3>Testdesign utifrån täckningskriterier</h3>
+          <p class="course-lead">Designade tester för en metod som beräknar skatt utifrån dess kontrollflödesgraf och mätte sedan hur starka de var med mutationstestning.</p>
+          <ul class="highlights">
+            <li>Tog fram täckningskrav för kanter, kantpar, def-use-par och predikat och skrev testfall med förväntade utdata som täcker dem.</li>
+            <li>Körde mutationstestning med PIT för att hitta mutanter som testerna inte lyckades döda.</li>
+          </ul>
+          <ul class="tags"><li>Java</li><li>Kontrollflödesgrafer</li><li>Täckningskriterier</li><li>Mutationstestning</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">Privacy and Security for Software Systems</span> <span class="uni">Åbo universitet</span></p>
+          <h3>Integritet och säkerhet i programvarudesign</h3>
+          <p class="course-lead">Två uppgiftsserier om hur reglering och säkerhetspraxis formar hur programvara byggs.</p>
+          <ul class="highlights">
+            <li>Identifierade de artiklar i GDPR som är viktigast för ingenjörer, som inbyggt dataskydd och rätten till radering, och granskade samtyckesbanderoller och mörka mönster på verkliga webbplatser, inklusive deras nätverksanrop till tredje parter.</li>
+            <li>Behandlade SAML, OAuth 2.0 och API-nycklar, DevSecOps med CVE, CWE och CVSS samt incidenterna i leveranskedjorna hos CrowdStrike och SolarWinds.</li>
+          </ul>
+          <ul class="tags"><li>GDPR</li><li>Inbyggt dataskydd</li><li>OAuth 2.0</li><li>DevSecOps</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="wrap section">
+      <h2 class="section-title"><span>04</span> Erfarenhet</h2>
+      <p class="section-lead">
+        Vid sidan av studierna har jag arbetat med flyttar sedan 2020, och sedan juli 2026 driver jag mitt eget företag.
+      </p>
+      <div class="edu-grid exp-grid">
+        <div class="edu-card">
+          <p class="edu-date">juli 2026 – pågående</p>
+          <h3>Flyttarbetare, enskild näringsidkare</h3>
+          <p class="edu-school">Tmi Granqvist Mikael</p>
+          <ul class="highlights">
+            <li>Arbetar som egenföretagare och underleverantör till flyttfirmor vid bostads- och företagsflyttar.</li>
+            <li>Driver företaget själv, inklusive schemaläggning och fakturering.</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date">okt 2020 – jan 2025</p>
+          <h3>Flyttarbetare</h3>
+          <p class="edu-school">ELD Muutot</p>
+          <ul class="highlights">
+            <li>Lastade och lossade kundernas ägodelar på ett säkert sätt och betjänade kunderna under flyttdagen.</li>
+            <li>Arbetade i team för att slutföra uppdragen effektivt.</li>
+            <li>Introducerade nya anställda i arbetsrutiner och säkra arbetssätt.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="wrap section">
+      <h2 class="section-title"><span>05</span> Utveckling med AI</h2>
+      <p class="section-lead">
+        Jag använder <strong>Claude Code</strong>, Anthropics AI-agent för programmering, som parprogrammerare.
+        Chess Game Analyser byggdes med den, och så även den här webbplatsen.
+        AI gör mig snabbare, men jag fattar fortfarande besluten och kontrollerar resultaten.
+      </p>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <span class="ai-step">Planering</span>
+          <h3>Jag bestämmer vad som ska byggas</h3>
+          <p>Jag delar upp funktioner i tydliga uppgifter och förklarar målet och begränsningarna. En exakt beskrivning ger mycket bättre resultat än en vag.</p>
+        </div>
+        <div class="ai-card">
+          <span class="ai-step">Granskning</span>
+          <h3>Jag läser varje ändring</h3>
+          <p>Agenten skriver ett första utkast och jag granskar ändringarna som om de vore en kollegas pull request. Inget går ut som jag inte förstår.</p>
+        </div>
+        <div class="ai-card">
+          <span class="ai-step">Verifiering</span>
+          <h3>Testerna är skyddsräcket</h3>
+          <p>AI-skriven kod måste klara testerna. Schackanalysatorns poängsättning, öppningar och tränare täcks av enhetstester, och jag kontrollerar resultaten mot pålitliga källor som Lichess precisionsmodell.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap section">
+      <h2 class="section-title"><span>06</span> Färdigheter</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programmeringsspråk</h3>
+          <ul class="tags"><li>Python</li><li>Java</li><li>SQL</li><li>JavaScript</li><li>C</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data och maskininlärning</h3>
+          <ul class="tags"><li>Explorativ dataanalys</li><li>Datamodellering</li><li>Maskininlärning</li><li>Signalbehandling</li><li>Biosignalanalys</li><li>Särdragsutvinning</li><li>scikit-learn</li><li>pandas</li><li>Datavisualisering</li><li>Datorseende</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Webb och plattformar</h3>
+          <ul class="tags"><li>Node.js</li><li>Flask</li><li>WordPress</li><li>Elementor</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Moln och verktyg</h3>
+          <ul class="tags"><li>AWS</li><li>Nordic nRF52 &amp; BLE</li><li>Git &amp; GitHub</li><li>JUnit</li><li>Robot Framework</li><li>pytest</li><li>node:test</li><li>VS Code</li><li>Microsoft 365</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI-verktyg</h3>
+          <ul class="tags"><li class="tag-ai">Claude Code</li><li>Claude</li><li>ChatGPT</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Språk</h3>
+          <ul class="tags"><li>Svenska · modersmål</li><li>Finska · modersmål</li><li>Engelska · flytande</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATHLETE -->
+    <section id="athlete" class="wrap section">
+      <h2 class="section-title"><span>07</span> Utöver koden</h2>
+      <div class="athlete">
+        <figure class="athlete-photo">
+          <img src="../mikael-400m.jpg" alt="Mikael springer 4×400&nbsp;m stafett för Sibbo Vargarna med stafettpinnen i handen" width="800" height="1137" loading="lazy">
+          <figcaption>Foto © Ellen Koskinen</figcaption>
+        </figure>
+        <div class="athlete-main">
+          <div class="athlete-text">
+            <p class="athlete-kicker">Friidrott · 400&nbsp;m och 200&nbsp;m</p>
+            <h3>Vad ett varv på banan har lärt mig om arbete</h3>
+            <p>
+              Jag har idrottat sedan jag var sju: fotboll tills jag var 15, sedan friidrott.
+              I dag springer jag 400&nbsp;m för <strong>Sibbo Vargarna</strong>. Jag har sprungit i finalen på 400&nbsp;m
+              vid FM i friidrott, och jag har vunnit FM-guld i 4×400&nbsp;m stafett tre gånger med min klubb.
+            </p>
+            <p>
+              400&nbsp;m belönar månader av jämn och oglamorös träning. En stafett fungerar bara om varje sträcka levererar
+              och varje växling är ren. Samma vanor tar jag med mig till programvaruutveckling: jämna framsteg, tillit
+              till laget och skärpa under press.
+            </p>
+          </div>
+          <ul class="stats">
+            <li><strong>3×</strong><span>Finländsk mästare, 4×400&nbsp;m stafett</span></li>
+            <li><strong>48,08</strong><span>Personligt rekord på 400&nbsp;m</span></li>
+            <li><strong>Finalist</strong><span>FM i friidrott, 400&nbsp;m</span></li>
+            <li><strong>20 år</strong><span>inom idrott, varav 12 i friidrott</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section contact">
+      <h2 class="section-title"><span>08</span> Kontakt</h2>
+      <p class="contact-lead">
+        Har du en trainee-, junior- eller praktikplats i åtanke? Hör gärna av dig.<br>
+        <a class="contact-email" href="mailto:mikael.granqvist12@gmail.com">mikael.granqvist12@gmail.com</a>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:mikael.granqvist12@gmail.com">Skicka e-post</a>
+        <a class="btn" href="https://www.linkedin.com/in/mikael-g-granqvist" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/mikugh" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Mikael Granqvist</p>
+    <a href="#top">Till toppen ↑</a>
+  </footer>
+
+  <script src="../script.js?v=3"></script>
+</body>
+</html>

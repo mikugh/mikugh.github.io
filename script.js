@@ -20,13 +20,14 @@ const menuButton = document.getElementById('menu-toggle');
 function setMenu(open) {
   header.classList.toggle('menu-open', open);
   menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  // Labels come from the page so each language version can use its own words
+  menuButton.setAttribute('aria-label', open ? menuButton.dataset.closeLabel : menuButton.dataset.openLabel);
 }
 
 menuButton.addEventListener('click', () => setMenu(!header.classList.contains('menu-open')));
 document.querySelectorAll('#site-nav a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
-matchMedia('(min-width: 721px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
+matchMedia('(min-width: 1001px)').addEventListener('change', (e) => { if (e.matches) setMenu(false); });
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();

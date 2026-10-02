@@ -85,6 +85,19 @@ img, svg { display: block; max-width: 100%; }
 }
 .theme-toggle:hover { border-color: var(--accent); }
 
+/* Language switch */
+.lang-switch {
+  display: flex; gap: 2px; padding: 3px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+}
+.lang-switch a {
+  padding: 4px 9px; border-radius: 999px;
+  font-size: 12px; font-weight: 600; letter-spacing: .04em;
+  color: var(--muted); text-decoration: none;
+}
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a[aria-current="page"] { background: var(--accent-soft); color: var(--accent); }
+
 /* Menu button, shown on phones only */
 .menu-toggle {
   display: none; place-content: center; gap: 4px;
@@ -325,6 +338,20 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* Responsive */
+@media (max-width: 1000px) {
+  .nav-inner { gap: 10px; }
+  .lang-switch { margin-left: auto; }
+  .menu-toggle { display: grid; }
+  .nav nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; gap: 0; margin: 0; padding: 4px 16px 12px;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
+  }
+  .nav.menu-open nav { display: flex; }
+  .nav nav a { padding: 13px 0; font-size: 17px; color: var(--ink); border-bottom: 1px solid var(--line); }
+  .nav nav a:last-child { border-bottom: 0; }
+}
 @media (max-width: 900px) {
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .edu-grid, .course-grid, .course-list { grid-template-columns: 1fr; }
@@ -341,18 +368,6 @@ img, svg { display: block; max-width: 100%; }
   .hero-photo { max-width: 280px; order: -1; justify-self: start; }
 }
 @media (max-width: 720px) {
-  .nav-inner { gap: 10px; }
-  .theme-toggle { margin-left: auto; }
-  .menu-toggle { display: grid; }
-  .nav nav {
-    display: none; position: absolute; top: 100%; left: 0; right: 0;
-    flex-direction: column; gap: 0; margin: 0; padding: 4px 16px 12px;
-    background: var(--bg); border-bottom: 1px solid var(--line);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
-  }
-  .nav.menu-open nav { display: flex; }
-  .nav nav a { padding: 13px 0; font-size: 17px; color: var(--ink); border-bottom: 1px solid var(--line); }
-  .nav nav a:last-child { border-bottom: 0; }
   .hero { padding: 48px 0 64px; }
   .hero-photo { max-width: 200px; }
   .hero-photo { margin: 0 12px 12px 0; }

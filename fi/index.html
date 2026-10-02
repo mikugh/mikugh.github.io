@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikael Granqvist · Kehittäjä</title>
+  <meta name="description" content="Mikael Granqvistin portfolio. Tietotekniikan diplomi-insinööriopiskelija, erikoistumisena terveysteknologia: asiakasverkkosivut, data ja koneoppiminen sekä tekoälytyökaluilla rakennetut projektit.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f5f4a'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'>MG</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="en" href="https://mikugh.github.io/">
+  <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
+  <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
+  <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
+  <link rel="stylesheet" href="../style.css?v=3">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">Mikael<span>.</span></a>
+      <nav aria-label="Päävalikko" id="site-nav">
+        <a href="#about">Minusta</a>
+        <a href="#projects">Projektit</a>
+        <a href="#education">Koulutus</a>
+        <a href="#experience">Työkokemus</a>
+        <a href="#ai">Tekoäly</a>
+        <a href="#skills">Osaaminen</a>
+        <a href="#contact">Yhteystiedot</a>
+      </nav>
+      <div class="lang-switch" aria-label="Kieli">
+        <a href="../" hreflang="en" lang="en">EN</a>
+        <a href="../sv/" hreflang="sv" lang="sv">SV</a>
+        <a href="./" hreflang="fi" lang="fi" aria-current="page">FI</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Vaihda tumma tila">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Avaa valikko" data-open-label="Avaa valikko" data-close-label="Sulje valikko" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+      <p class="eyebrow">Kehittäjä · Urheilija · Turku</p>
+      <h1>Hei, olen Mikael Granqvist.</h1>
+      <p class="lead">
+        Opiskelen tietotekniikan diplomi-insinööriksi Åbo Akademissa, erikoistumisena terveysteknologia.
+        Projektini ulottuvat personal trainerin kolmikielisestä verkkosivustosta verenpaineen arviointiin
+        pulssisignaaleista koneoppimisen avulla ja selaimessa Stockfishia käyttävään shakkivalmentajaan.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Katso projektini</a>
+        <a class="btn" href="https://github.com/mikugh" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 4.7 18 5 18 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/mikael-g-granqvist" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="../mikael.jpg" alt="Mikael Granqvistin muotokuva" width="800" height="839">
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap section">
+      <h2 class="section-title"><span>01</span> Minusta</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Olen kehittäjä, joka oppii yrityksen ja erehdyksen kautta. Useimmat projektini saavat alkunsa siitä,
+            että haluan jotain, mitä ei vielä ole olemassa tai mihin on vaikea päästä käsiksi, joten yritän rakentaa sen itse.
+          </p>
+          <p>
+            Opiskelen <strong>tietotekniikan</strong> diplomi-insinööriksi, erikoistumisena
+            <strong>terveysteknologia</strong>. Opintoihini kuuluu koneoppimista, datatiedettä ja pilvilaskentaa,
+            ja opinnäytetyöni yhdistävät tekniikan urheiluun ja terveyteen.
+          </p>
+          <p>
+            Liikun sujuvasti ohjelmistokehityksen eri osa-alueilla: <strong>JavaScript ja Node.js</strong> verkossa,
+            <strong>Python</strong> skripteihin, rajapintoihin ja dataan, <strong>Java</strong> ja <strong>SQL</strong>
+            sekä <strong>WordPress</strong> asiakkaiden verkkosivuihin. Käytän päivittäin tekoälytyökaluja, kuten
+            <strong>Claude Codea</strong>, ja pidän tärkeinä selkeitä käyttöliittymiä, rehellisiä lukuja
+            ja ohjelmistoja, jotka selittävät itsensä.
+          </p>
+          <p>
+            Koodin ulkopuolella olen 400 metrin juoksija ja kolminkertainen viestin Suomen mestari. Kaksikymmentä vuotta
+            urheilua on opettanut minulle kurinalaisuutta, kärsivällisyyttä ja palautteen vastaanottamista, ja tuon samat tavat myös työhöni.
+          </p>
+          <p>
+            Etsin tällä hetkellä <strong>trainee-, junior- tai harjoittelupaikkaa</strong>
+            <strong>ohjelmistokehityksen</strong>, <strong>terveysteknologian</strong> tai
+            <strong>datatieteen ja data-analytiikan</strong> parissa, jossa pääsen tekemään oikeaa työtä ja oppimaan kokeneemmilta.
+          </p>
+        </div>
+        <ul class="facts">
+          <li><span>Asuinpaikka</span>Turku</li>
+          <li><span>Opinnot</span>DI, tietotekniikka, terveysteknologia · Åbo Akademi</li>
+          <li><span>Alat</span>Ohjelmistokehitys, terveysteknologia, datatiede</li>
+          <li><span>Etsin</span>Trainee-, junior- tai harjoittelupaikkaa</li>
+          <li><span>Vapaa-ajalla</span>400 metrin juoksija, Sibbo Vargarna</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <h2 class="section-title"><span>02</span> Valitut projektit</h2>
+
+      <article class="project">
+        <div class="project-art project-shot">
+          <a href="https://ptlena.com" target="_blank" rel="noopener"><img src="../shot-ptlena.jpg" alt="Kuvakaappaus PT Lenan etusivusta" width="1100" height="688" loading="lazy"></a>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Asiakassivusto · WordPress</p>
+          <h3>PT Lena</h3>
+          <p>
+            Verkkosivusto PT Lenalle, personal trainerille, joka tarjoaa voimaharjoittelua ja hyvinvointivalmennusta.
+            Suunnittelin ja toteutin sivuston WordPressillä ja Elementorilla, ja se on julkaistu osoitteessa ptlena.com.
+          </p>
+          <ul class="highlights">
+            <li>Täysin <strong>kolmikielinen</strong>: jokainen sivu on saatavilla ruotsiksi, suomeksi ja englanniksi.</li>
+            <li>Etusivu, Palvelut, Tietoa ja Yhteystiedot -sivut sekä linkit asiakkaan Instagramiin ja Facebookiin.</li>
+            <li>Responsiivinen asettelu, joka toimii puhelimilla, tableteilla ja tietokoneilla.</li>
+          </ul>
+          <ul class="tags"><li>WordPress</li><li>Elementor</li><li>Monikielisyys</li><li>Responsiivinen suunnittelu</li></ul>
+          <div class="links">
+            <a href="https://ptlena.com" target="_blank" rel="noopener">Siirry sivustolle ptlena.com →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art project-shot">
+          <img src="../ppg-raw-vs-processed.jpg" alt="10 sekunnin PPG-mittaus ennen suodatusta ja sen jälkeen" width="1000" height="801" loading="lazy">
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Koneoppiminen · Turun yliopisto</p>
+          <h3>Verenpaineen arviointi PPG-signaaleista</h3>
+          <p>
+            Arvioin systolista ja diastolista verenpainetta fotopletysmografia- eli PPG-mittauksista. PPG on optinen
+            pulssisignaali, jota esimerkiksi älykellot ja pulssioksimetrit mittaavat. Kyseessä oli pariprojekti:
+            verenpaineen arviointi oli minun osuuteni, ja parini teki erillisen analyysin. Kuvassa on yksi 10 sekunnin mittaus ennen suodatusta ja sen jälkeen.
+          </p>
+          <ul class="highlights">
+            <li><strong>Data:</strong> 29&nbsp;599 kymmenen sekunnin PPG-segmenttiä 125&nbsp;Hz:n näytteenottotaajuudella, jaettuna 23&nbsp;675 opetus- ja 5&nbsp;924 testisegmenttiin.</li>
+            <li><strong>Esikäsittely</strong> Pythonilla: Butterworth-kaistanpäästösuodatin, aallokepohjainen kohinanpoisto ja Gaussin tasoitus.</li>
+            <li><strong>23 piirrettä</strong> segmenttiä kohden: pulssin muoto (systolinen ja diastolinen amplitudi, augmentaatioindeksi, nousu- ja laskuaika, dikroottinen lovi), tilastolliset tunnusluvut (vinous, huipukkuus, entropia), taajuuspiirteet ja signaalin derivaatat.</li>
+            <li><strong>Mallit:</strong> tukivektoriregressio ja gradienttitehostus (gradient boosting). Paras keskimääräinen absoluuttinen virhe oli 19,2&nbsp;mmHg systoliselle ja 7,5&nbsp;mmHg diastoliselle paineelle.</li>
+            <li><strong>Rehellinen arviointi:</strong> ennusteet pysyivät lähellä keskiarvoa, ja konkordanssi-indeksi oli noin 0,5, joten mallit eivät olleet oppineet mittausten välistä vaihtelua. Jäljitin todennäköiset syyt piirteisiin, mallien monimutkaisuuteen ja signaalin laatuun, ja kokeilin muita piirrejoukkoja, malleja ja esikäsittelyjä.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>SciPy</li><li>Signaalinkäsittely</li><li>Biosignaalianalyysi</li><li>Piirteiden muodostus</li></ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-art project-shot">
+          <a href="https://github.com/mikugh/chess-analyser" target="_blank" rel="noopener"><img src="../shot-chess.jpg" alt="Kuvakaappaus Chess Game Analyserista: virhe, paras siirto ja kummankin pelaajan tarkkuus" width="1100" height="811" loading="lazy"></a>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Verkkosovellus · JavaScript</p>
+          <h3>Chess Game Analyser</h3>
+          <p>
+            Liitä peli, niin selaimessa WebAssemblyna toimiva Stockfish 19 arvioi jokaisen aseman. Jokainen siirto
+            luokitellaan parhaasta siirrosta vakavaan virheeseen, ja kumpikin pelaaja saa tarkkuusprosentin, joka lasketaan
+            samalla voittotodennäköisyysmallilla kuin Lichessissä.
+          </p>
+          <ul class="highlights">
+            <li><strong>Valmentaja</strong>, joka lajittelee virheesi sen mukaan, <em>miksi</em> ne syntyivät: suojaamattomat nappulat, huomaamatta jääneet uhat ja taktiikat. Kalleimmista virhetyypeistä tulee kysymyksiä, joita voi kysyä itseltään laudan ääressä.</li>
+            <li>Lukee kellodataa ja löytää tapoja, kuten virheitä nopeissa siirroissa tai aikapulassa.</li>
+            <li>Tallennetut pelit ryhmitellään avauksen mukaan, ja tulos ja tarkkuus näytetään avauksittain ja pelivaiheittain.</li>
+            <li>Interaktiivinen arviokaavio, parhaan siirron nuolet, näppäimistöohjaus, vaalea ja tumma tila sekä yksikkötestit.</li>
+          </ul>
+          <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>WebAssembly</li><li>Stockfish</li><li>chess.js</li><li>node:test</li><li class="tag-ai">Rakennettu Claude Codella</li></ul>
+          <div class="links">
+            <a href="https://github.com/mikugh/chess-analyser" target="_blank" rel="noopener">Lähdekoodi →</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="wrap section">
+      <h2 class="section-title"><span>03</span> Koulutus ja tutkimus</h2>
+
+      <article class="project">
+        <div class="project-art art-agent" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <rect width="320" height="200" class="pose-bg"/>
+            <g class="agent-links"><path d="M160 104 L82 58M160 104 L238 58M160 104 L82 152M160 104 L238 152"/></g>
+            <g class="agent-nodes">
+              <circle cx="82" cy="58" r="14"/><circle cx="238" cy="58" r="14"/>
+              <circle cx="82" cy="152" r="14"/><circle cx="238" cy="152" r="14"/>
+            </g>
+            <circle class="agent-core" cx="160" cy="104" r="30"/>
+            <path class="agent-pulse" d="M138 104 L148 104 L153 92 L160 118 L166 98 L170 104 L182 104"/>
+            <rect class="wip" x="112" y="10" width="96" height="22" rx="11"/>
+            <text x="160" y="25" class="wip-text">Kesken</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Diplomityö · Åbo Akademi</p>
+          <h3>Agenttiset tekoälyjärjestelmät terveydenhuollossa</h3>
+          <p>
+            <em lang="en">A Systematic Literature Review of Agentic AI Systems in Healthcare, their Evaluation Methods, and Explainability</em>
+          </p>
+          <p class="thesis-status">Kesken, valmistuu arviolta tammikuussa 2027.</p>
+          <ul class="tags"><li>Agenttinen tekoäly</li><li>Selitettävä tekoäly</li><li>Terveysteknologia</li></ul>
+        </div>
+      </article>
+
+      <article class="project reverse">
+        <div class="project-art art-pose" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid meet">
+            <rect width="320" height="200" class="pose-bg"/>
+            <g class="track"><path d="M0 178h320M0 192h320"/></g>
+            <g transform="translate(-30 -28) scale(1.2)">
+            <g class="bones">
+              <path class="b1" d="M162 40 L158 62"/>
+              <path class="b2" d="M158 62 L150 112"/>
+              <path class="b3" d="M158 62 L176 84 L194 70"/>
+              <path class="b4" d="M158 62 L140 88 L126 104"/>
+              <path class="b5" d="M150 112 L184 134 L174 172"/>
+              <path class="b6" d="M150 112 L128 142 L98 130"/>
+            </g>
+            <g class="joints">
+              <circle cx="162" cy="38" r="7"/><circle cx="158" cy="62" r="4"/><circle cx="176" cy="84" r="4"/><circle cx="194" cy="70" r="4"/>
+              <circle cx="140" cy="88" r="4"/><circle cx="126" cy="104" r="4"/><circle cx="150" cy="112" r="4"/>
+              <circle cx="184" cy="134" r="4"/><circle cx="174" cy="172" r="4"/><circle cx="128" cy="142" r="4"/><circle cx="98" cy="130" r="4"/>
+            </g>
+            <path class="angle" d="M171 126 A16 16 0 0 1 180 149"/>
+            <text x="196" y="142" class="angle-text">152°</text>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Kandidaatintyö · Åbo Akademi · 2024</p>
+          <h3>OpenPose-teknologian hyödyntäminen sprinttijuoksun liikeanalyysissä</h3>
+          <p>
+            Pystyykö konenäkömalli mittaamaan sprinttitekniikkaa tavallisesta videosta? Tässä kirjallisuuteen perustuvassa
+            työssä tutkin OpenPosea, avoimen lähdekoodin syväoppimismenetelmää, joka tunnistaa kehon avainpisteet kuvista
+            ja videoista, ja selvitin, voiko sillä mitata sprinttijuoksussa ratkaisevia nivelkulmia.
+          </p>
+          <ul class="highlights">
+            <li>Käsittelin sprinttijuoksun biomekaniikkaa, kuten lonkan, polven ja nilkan kulmia telinelähdössä, kiihdytysvaiheessa ja maksiminopeusvaiheessa.</li>
+            <li>Selitin taustalla olevan syväoppimisen: neuroverkot, konvoluutioneuroverkot ja OpenPosen arkkitehtuurin luottamuskarttoineen ja osien affiniteettikenttineen.</li>
+            <li>Tarkastelin kolmea tutkimusta OpenPosen käytöstä juoksussa: älypuhelimella kuvatut sprintit, aitajuoksu eri verkkoarkkitehtuureilla (VGG19 ja MobileNet, vertailtu RMSE:llä) sekä juoksumattojuoksu verrattuna merkkipohjaiseen liikkeenkaappaukseen.</li>
+            <li><strong>Johtopäätös:</strong> OpenPose ei ole vielä riittävän tarkka sprinttijuoksun analyysiin. Tarkkuus heikkenee nopeuden kasvaessa, jo 2,78&nbsp;m/s:sta 3,33&nbsp;m/s:iin, ja puuttuvat arvot sekä väärät positiiviset tekevät nivelkulmista epäluotettavia.</li>
+          </ul>
+          <ul class="tags"><li>Konenäkö</li><li>Syväoppiminen</li><li>Konvoluutioneuroverkot</li><li>Asennon tunnistus</li><li>Urheilubiomekaniikka</li></ul>
+          <div class="links">
+            <a href="../thesis-openpose-sprint.pdf" target="_blank" rel="noopener">Lue työ (PDF, ruotsiksi) →</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <p class="edu-date">2024 – nykyhetki</p>
+          <h3>Diplomi-insinööri (DI), tietotekniikka</h3>
+          <p class="edu-school">Åbo Akademi · Erikoistuminen: terveysteknologia</p>
+          <ul class="highlights">
+            <li><strong>Diplomityö (kesken):</strong> <em lang="en">A Systematic Literature Review of Agentic AI Systems in Healthcare, their Evaluation Methods, and Explainability</em>.</li>
+            <li>Erikoistumisena terveysteknologia, kursseja Åbo Akademissa ja Turun yliopistossa.</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date">2021 – 2024</p>
+          <h3>Tekniikan kandidaatti (TkK), tietotekniikka</h3>
+          <p class="edu-school">Åbo Akademi</p>
+          <ul class="highlights">
+            <li>Kandidaatintyö: <em>OpenPose-teknologian hyödyntäminen sprinttijuoksun liikeanalyysissä</em> (2024).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Keskeiset kurssit</h3>
+      <ul class="course-list">
+        <li><span class="course-name" lang="en">Machine Learning Health Technology Project</span><span class="uni">Turun yliopisto</span><span class="course-desc">Verenpaineen arviointi PPG-datasta koneoppimisen avulla (ks. <a href="#projects">Valitut projektit</a>).</span></li>
+        <li><span class="course-name" lang="en">Analytics for Health Wearables</span><span class="uni">Turun yliopisto</span><span class="course-desc">Signaalinkäsittely, huippujen tunnistus, signaalin laadun arviointi ja rytmihäiriöiden tunnistus.</span></li>
+        <li><span class="course-name" lang="en">Programming for Health Wearables</span><span class="uni">Turun yliopisto</span><span class="course-desc">Bluetooth-askelmittari nRF52-kortilla ja LSM6DSO-liikeanturilla (ks. alla).</span></li>
+        <li><span class="course-name" lang="en">Data Science</span><span class="uni">Åbo Akademi</span><span class="course-desc">Eksploratiivinen data-analyysi, datan hallinta, datan mallinnus, koneoppiminen ja datan visualisointi.</span></li>
+        <li><span class="course-name" lang="en">Cloud Computing</span><span class="uni">Åbo Akademi</span><span class="course-desc">AWS-instanssit, kuormantasaus, automaattinen skaalaus ja pilvitietokannat.</span></li>
+        <li><span class="course-name" lang="en">Software Testing</span><span class="uni">Åbo Akademi</span><span class="course-desc">Testaus ohjelmistokehityksen kaikilla tasoilla JUnitin ja Robot Frameworkin avulla.</span></li>
+        <li><span class="course-name" lang="en">Project Course</span><span class="uni">Åbo Akademi</span><span class="course-desc">Verkkosovellus Turun kirpputoreille, toteutettu kuuden hengen tiimissä ja esitelty ICT Showroom 2025 -tapahtumassa.</span></li>
+      </ul>
+
+      <h3 class="subsection-title">Valitut kurssiprojektit</h3>
+      <div class="course-grid">
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">Programming for Health Wearables</span> <span class="uni">Turun yliopisto</span></p>
+          <h3>Bluetooth-askelmittari nRF52-kortilla</h3>
+          <p class="course-lead">Askelmittari Nordic nRF52 -kortilla ja LSM6DSO-liikeanturilla. Se lähettää askelmäärän reaaliajassa älypuhelimeen Bluetooth Low Energyn kautta. Toteutettu kolmen hengen tiimissä.</p>
+          <ul class="highlights">
+            <li>ST:n askelmittariajuri integroitiin I²C-väylän (TWI) kautta, ja askelmäärä varmistettiin debuggerissa ennen Bluetoothin lisäämistä.</li>
+            <li>Askelmittari siirrettiin Nordicin UART-over-BLE-pohjaan, ja puhelin näytti askeleet reaaliajassa nRF Connect- ja nRF Toolbox -sovelluksissa.</li>
+          </ul>
+          <ul class="tags"><li>C</li><li>nRF52</li><li>Bluetooth LE</li><li>I²C</li><li>Anturit</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">System Safety</span> <span class="uni">Åbo Akademi</span></p>
+          <h3>STPA-analyysi Saudia Flight 163 -onnettomuudesta</h3>
+          <p class="course-lead">Sovelsin STPA-menetelmää (System-Theoretic Process Analysis) vuoden 1980 rahtiruuman paloon, jossa kaikki 301 koneessa ollutta kuolivat, vaikka kone laskeutui turvallisesti.</p>
+          <ul class="highlights">
+            <li>Mallinsin ohjausrakenteen (ohjaamomiehistö, matkustamohenkilökunta, lennonjohto, lentoyhtiö, valmistaja ja FAA) ja määrittelin kolme vaaraa turvallisuusrajoitteineen.</li>
+            <li>Jäljitin vaaralliset ohjaustoimenpiteet ohjaamon ulkopuolisiin syihin, kuten rahtiruuman paloluokitukseen, jota sovellettiin suurempaan tilaan ilman kunnollista testausta, ja ehdotin turvallisuustoimenpiteitä.</li>
+          </ul>
+          <ul class="tags"><li>STPA</li><li>Järjestelmäturvallisuus</li><li>Vaaranalyysi</li><li>Juurisyyanalyysi</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">Software Testing</span> <span class="uni">Åbo Akademi</span></p>
+          <h3>Kattavuuteen perustuva testisuunnittelu</h3>
+          <p class="course-lead">Suunnittelin testit veroa laskevalle metodille sen ohjausvuokaavion pohjalta ja mittasin niiden tehoa mutaatiotestauksella.</p>
+          <ul class="highlights">
+            <li>Johdin kaari-, kaaripari-, def-use- ja predikaattikattavuuden vaatimukset ja kirjoitin ne kattavat testitapaukset odotettuine tuloksineen.</li>
+            <li>Ajoin PIT-mutaatiotestauksen löytääkseni mutantit, joita testit eivät tappaneet.</li>
+          </ul>
+          <ul class="tags"><li>Java</li><li>Ohjausvuokaaviot</li><li>Kattavuuskriteerit</li><li>Mutaatiotestaus</li></ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date course-kicker"><span lang="en">Privacy and Security for Software Systems</span> <span class="uni">Turun yliopisto</span></p>
+          <h3>Yksityisyys ja tietoturva ohjelmistosuunnittelussa</h3>
+          <p class="course-lead">Kaksi tehtäväsarjaa siitä, miten sääntely ja tietoturvakäytännöt vaikuttavat ohjelmistojen rakentamiseen.</p>
+          <ul class="highlights">
+            <li>Tunnistin insinöörin kannalta tärkeimmät GDPR:n artiklat, kuten sisäänrakennetun tietosuojan ja oikeuden tietojen poistamiseen, ja arvioin evästeilmoituksia ja harhaanjohtavia käyttöliittymiä (dark patterns) todellisilla verkkosivuilla, myös niiden kolmansille osapuolille lähteviä verkkopyyntöjä.</li>
+            <li>Käsittelin SAML:ää, OAuth 2.0:aa ja API-avaimia, DevSecOpsia CVE-, CWE- ja CVSS-järjestelmineen sekä CrowdStriken ja SolarWindsin toimitusketjutapauksia.</li>
+          </ul>
+          <ul class="tags"><li>GDPR</li><li>Sisäänrakennettu tietosuoja</li><li>OAuth 2.0</li><li>DevSecOps</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="wrap section">
+      <h2 class="section-title"><span>04</span> Työkokemus</h2>
+      <p class="section-lead">
+        Opintojeni ohessa olen työskennellyt muuttoalalla vuodesta 2020, ja heinäkuusta 2026 lähtien olen toiminut omalla toiminimelläni.
+      </p>
+      <div class="edu-grid exp-grid">
+        <div class="edu-card">
+          <p class="edu-date">7/2026 – nykyhetki</p>
+          <h3>Muuttotyöntekijä (toiminimiyrittäjä)</h3>
+          <p class="edu-school">Tmi Granqvist Mikael</p>
+          <ul class="highlights">
+            <li>Toimin itsenäisenä aliurakoitsijana yhteistyössä muuttoyritysten kanssa asuntojen ja yritysten muutoissa.</li>
+            <li>Vastaan itse yritykseni toiminnasta, aikataulutuksesta ja laskutuksesta.</li>
+          </ul>
+        </div>
+        <div class="edu-card">
+          <p class="edu-date">10/2020 – 1/2025</p>
+          <h3>Muuttotyöntekijä</h3>
+          <p class="edu-school">ELD Muutot</p>
+          <ul class="highlights">
+            <li>Vastasin tavaroiden turvallisesta lastaamisesta ja purkamisesta ja palvelin asiakkaita muuttopäivänä.</li>
+            <li>Työskentelin tiimissä tehokkaan lopputuloksen saavuttamiseksi.</li>
+            <li>Perehdytin uusia työntekijöitä työohjeisiin ja turvallisiin toimintatapoihin.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="wrap section">
+      <h2 class="section-title"><span>05</span> Kehitystyö tekoälyn kanssa</h2>
+      <p class="section-lead">
+        Käytän <strong>Claude Codea</strong>, Anthropicin tekoälypohjaista ohjelmointiagenttia, pariohjelmoijana.
+        Chess Game Analyser on rakennettu sen avulla, kuten myös tämä sivusto.
+        Tekoäly nopeuttaa työtäni, mutta teen päätökset edelleen itse ja tarkistan tulokset.
+      </p>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <span class="ai-step">Suunnittelu</span>
+          <h3>Päätän, mitä rakennetaan</h3>
+          <p>Pilkon ominaisuudet selkeiksi tehtäviksi ja kerron tavoitteen ja rajoitteet. Tarkka ohje tuottaa paljon parempia tuloksia kuin epämääräinen.</p>
+        </div>
+        <div class="ai-card">
+          <span class="ai-step">Katselmointi</span>
+          <h3>Luen jokaisen muutoksen</h3>
+          <p>Agentti kirjoittaa ensimmäisen version, ja käyn muutokset läpi samalla tavalla kuin kollegan pull requestin. En julkaise mitään, mitä en ymmärrä.</p>
+        </div>
+        <div class="ai-card">
+          <span class="ai-step">Varmistus</span>
+          <h3>Testit ovat turvakaiteet</h3>
+          <p>Tekoälyn kirjoittaman koodin on läpäistävä testit. Shakkianalysaattorin pisteytys, avaukset ja valmentaja on katettu yksikkötesteillä, ja tarkistan tulokset luotettavia lähteitä, kuten Lichessin tarkkuusmallia, vasten.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap section">
+      <h2 class="section-title"><span>06</span> Osaaminen</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Ohjelmointikielet</h3>
+          <ul class="tags"><li>Python</li><li>Java</li><li>SQL</li><li>JavaScript</li><li>C</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data ja koneoppiminen</h3>
+          <ul class="tags"><li>Eksploratiivinen data-analyysi</li><li>Datan mallinnus</li><li>Koneoppiminen</li><li>Signaalinkäsittely</li><li>Biosignaalianalyysi</li><li>Piirteiden muodostus</li><li>scikit-learn</li><li>pandas</li><li>Datan visualisointi</li><li>Konenäkö</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Verkko ja alustat</h3>
+          <ul class="tags"><li>Node.js</li><li>Flask</li><li>WordPress</li><li>Elementor</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Pilvi ja työkalut</h3>
+          <ul class="tags"><li>AWS</li><li>Nordic nRF52 &amp; BLE</li><li>Git &amp; GitHub</li><li>JUnit</li><li>Robot Framework</li><li>pytest</li><li>node:test</li><li>VS Code</li><li>Microsoft 365</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tekoälytyökalut</h3>
+          <ul class="tags"><li class="tag-ai">Claude Code</li><li>Claude</li><li>ChatGPT</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Kielitaito</h3>
+          <ul class="tags"><li>Ruotsi · äidinkieli</li><li>Suomi · äidinkieli</li><li>Englanti · sujuva</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATHLETE -->
+    <section id="athlete" class="wrap section">
+      <h2 class="section-title"><span>07</span> Koodin ulkopuolella</h2>
+      <div class="athlete">
+        <figure class="athlete-photo">
+          <img src="../mikael-400m.jpg" alt="Mikael juoksee 4×400 metrin viestiä Sibbo Vargarnan riveissä viestikapula kädessään" width="800" height="1137" loading="lazy">
+          <figcaption>Kuva © Ellen Koskinen</figcaption>
+        </figure>
+        <div class="athlete-main">
+          <div class="athlete-text">
+            <p class="athlete-kicker">Yleisurheilu · 400&nbsp;m ja 200&nbsp;m</p>
+            <h3>Mitä yksi kierros radalla on opettanut minulle työstä</h3>
+            <p>
+              Olen urheillut seitsemänvuotiaasta asti: jalkapalloa 15-vuotiaaksi ja sen jälkeen yleisurheilua.
+              Nykyään juoksen 400 metriä <strong>Sibbo Vargarnassa</strong>. Olen juossut 400 metrin finaalissa
+              Kalevan kisoissa ja voittanut seurani kanssa 4×400 metrin viestin Suomen mestaruuden kolme kertaa.
+            </p>
+            <p>
+              400 metriä palkitsee kuukausien tasaisen ja näkymättömän harjoittelun. Viesti toimii vain, jos jokainen
+              osuus onnistuu ja jokainen vaihto on puhdas. Tuon samat tavat ohjelmistokehitykseen: tasaisen etenemisen,
+              luottamuksen tiimiin ja terävyyden paineen alla.
+            </p>
+          </div>
+          <ul class="stats">
+            <li><strong>3×</strong><span>Suomen mestari, 4×400&nbsp;m viesti</span></li>
+            <li><strong>48,08</strong><span>Ennätys 400 metrillä</span></li>
+            <li><strong>Finalisti</strong><span>Kalevan kisat, 400&nbsp;m</span></li>
+            <li><strong>20 v</strong><span>urheilua, joista 12 yleisurheilua</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section contact">
+      <h2 class="section-title"><span>08</span> Yhteystiedot</h2>
+      <p class="contact-lead">
+        Onko sinulla tarjolla trainee-, junior- tai harjoittelupaikka? Kuulen mielelläni sinusta.<br>
+        <a class="contact-email" href="mailto:mikael.granqvist12@gmail.com">mikael.granqvist12@gmail.com</a>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:mikael.granqvist12@gmail.com">Lähetä sähköpostia</a>
+        <a class="btn" href="https://www.linkedin.com/in/mikael-g-granqvist" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/mikugh" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Mikael Granqvist</p>
+    <a href="#top">Takaisin ylös ↑</a>
+  </footer>
+
+  <script src="../script.js?v=3"></script>
+</body>
+</html>
