@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
   <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
   <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -75,6 +75,12 @@
         <img src="mikael.jpg" alt="Portrait of Mikael Granqvist" width="800" height="839">
       </figure>
     </section>
+
+    <div class="wrap section-controls">
+      <button class="toggle-all" id="toggle-all" type="button" data-expand-label="Expand all" data-collapse-label="Collapse all" hidden>
+        <span class="toggle-all-icon" aria-hidden="true"></span><span class="toggle-all-label">Collapse all</span>
+      </button>
+    </div>
 
     <!-- ABOUT -->
     <section id="about" class="wrap section">
@@ -349,7 +355,7 @@
     <section id="experience" class="wrap section">
       <h2 class="section-title"><span>04</span> Experience</h2>
       <p class="section-lead">
-        Alongside my studies I have worked in moving since 2020, and since July 2026 I have run my own business.
+        Alongside my studies I have worked as a mover since 2020, and since July 2026 I have run my own business.
       </p>
       <div class="edu-grid exp-grid">
         <div class="edu-card">
@@ -485,6 +491,6 @@
     <a href="#top">Back to top ↑</a>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

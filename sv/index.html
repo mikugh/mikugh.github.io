@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
   <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
   <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
-  <link rel="stylesheet" href="../style.css?v=3">
+  <link rel="stylesheet" href="../style.css?v=4">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -74,6 +74,12 @@
         <img src="../mikael.jpg" alt="Porträtt av Mikael Granqvist" width="800" height="839">
       </figure>
     </section>
+
+    <div class="wrap section-controls">
+      <button class="toggle-all" id="toggle-all" type="button" data-expand-label="Fäll ut alla" data-collapse-label="Fäll ihop alla" hidden>
+        <span class="toggle-all-icon" aria-hidden="true"></span><span class="toggle-all-label">Fäll ihop alla</span>
+      </button>
+    </div>
 
     <!-- ABOUT -->
     <section id="about" class="wrap section">
@@ -348,7 +354,7 @@
     <section id="experience" class="wrap section">
       <h2 class="section-title"><span>04</span> Erfarenhet</h2>
       <p class="section-lead">
-        Vid sidan av studierna har jag arbetat med flyttar sedan 2020, och sedan juli 2026 driver jag mitt eget företag.
+        Vid sidan av studierna har jag arbetat som flyttarbetare sedan 2020, och sedan juli 2026 driver jag mitt eget företag.
       </p>
       <div class="edu-grid exp-grid">
         <div class="edu-card">
@@ -484,6 +490,6 @@
     <a href="#top">Till toppen ↑</a>
   </footer>
 
-  <script src="../script.js?v=3"></script>
+  <script src="../script.js?v=4"></script>
 </body>
 </html>

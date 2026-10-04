@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
   <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
   <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
-  <link rel="stylesheet" href="../style.css?v=3">
+  <link rel="stylesheet" href="../style.css?v=4">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -74,6 +74,12 @@
         <img src="../mikael.jpg" alt="Mikael Granqvistin muotokuva" width="800" height="839">
       </figure>
     </section>
+
+    <div class="wrap section-controls">
+      <button class="toggle-all" id="toggle-all" type="button" data-expand-label="Avaa kaikki" data-collapse-label="Sulje kaikki" hidden>
+        <span class="toggle-all-icon" aria-hidden="true"></span><span class="toggle-all-label">Sulje kaikki</span>
+      </button>
+    </div>
 
     <!-- ABOUT -->
     <section id="about" class="wrap section">
@@ -348,7 +354,7 @@
     <section id="experience" class="wrap section">
       <h2 class="section-title"><span>04</span> Työkokemus</h2>
       <p class="section-lead">
-        Opintojeni ohessa olen työskennellyt muuttoalalla vuodesta 2020, ja heinäkuusta 2026 lähtien olen toiminut omalla toiminimelläni.
+        Opintojeni ohessa olen työskennellyt muuttotyöntekijänä vuodesta 2020, ja heinäkuusta 2026 lähtien olen toiminut omalla toiminimelläni.
       </p>
       <div class="edu-grid exp-grid">
         <div class="edu-card">
@@ -484,6 +490,6 @@
     <a href="#top">Takaisin ylös ↑</a>
   </footer>
 
-  <script src="../script.js?v=3"></script>
+  <script src="../script.js?v=4"></script>
 </body>
 </html>
