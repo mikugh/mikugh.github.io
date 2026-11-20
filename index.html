@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
   <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
   <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -47,7 +47,7 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" data-more-label="Show more" data-less-label="Show less">
     <!-- HERO -->
     <section class="hero wrap">
       <div class="hero-text">
@@ -152,7 +152,7 @@
 
       <article class="project reverse">
         <div class="project-art project-shot">
-          <img src="ppg-raw-vs-processed.jpg" alt="A 10-second PPG recording before and after filtering" width="1000" height="801" loading="lazy">
+          <img src="ppg-raw-vs-processed.jpg" class="chart-img" alt="A 10-second PPG recording before and after filtering" width="1000" height="801" loading="lazy">
         </div>
         <div class="project-body">
           <p class="project-kicker">Machine learning · University of Turku</p>
@@ -164,9 +164,9 @@
           </p>
           <ul class="highlights">
             <li><strong>Data:</strong> 29,599 PPG segments of 10 seconds at 125&nbsp;Hz, split into 23,675 for training and 5,924 for testing.</li>
+            <li><strong>Models:</strong> support vector regression and gradient boosting. The best mean absolute error was 19.2&nbsp;mmHg for systolic and 7.5&nbsp;mmHg for diastolic pressure.</li>
             <li><strong>Preprocessing</strong> in Python: a Butterworth band-pass filter, wavelet denoising and Gaussian smoothing.</li>
             <li><strong>23 engineered features</strong> per segment: pulse shape (systolic and diastolic amplitude, augmentation index, rise and fall time, dicrotic notch), statistics (skewness, kurtosis, entropy), frequency features and signal derivatives.</li>
-            <li><strong>Models:</strong> support vector regression and gradient boosting. The best mean absolute error was 19.2&nbsp;mmHg for systolic and 7.5&nbsp;mmHg for diastolic pressure.</li>
             <li><strong>Honest evaluation:</strong> the predictions stayed close to the average, with a concordance index of about 0.5, so the models had not learned the variation between recordings. I traced the likely causes to the features, model complexity and signal quality, and tested other feature sets, models and preprocessing.</li>
           </ul>
           <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>SciPy</li><li>Signal processing</li><li>Biosignal analysis</li><li>Feature engineering</li></ul>
@@ -491,6 +491,6 @@
     <a href="#top">Back to top ↑</a>
   </footer>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

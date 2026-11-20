@@ -174,10 +174,13 @@ img, svg { display: block; max-width: 100%; }
 .project {
   display: grid; grid-template-columns: 1fr 1.25fr; gap: 0;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  overflow: hidden; margin-bottom: 32px; box-shadow: var(--shadow);
+  /* clip, unlike hidden, keeps the sticky image below working */
+  overflow: hidden; overflow: clip; margin-bottom: 32px; box-shadow: var(--shadow);
 }
 .project.reverse .project-art { order: 2; }
-.project-art { background: var(--accent-soft); display: grid; place-items: center; padding: 32px; }
+.project-art { background: var(--accent-soft); display: grid; place-items: start center; padding: 32px; }
+/* The picture stays in view while you read a long card */
+.project-art > * { position: sticky; top: 96px; }
 .project-art svg { width: 100%; height: auto; border-radius: 12px; }
 .project-body { padding: 36px 40px; }
 .project-kicker { margin: 0 0 6px; font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
@@ -186,6 +189,22 @@ img, svg { display: block; max-width: 100%; }
 .highlights { margin: 0 0 22px; padding-left: 20px; }
 .highlights li { margin-bottom: 8px; }
 .highlights li::marker { color: var(--accent); }
+/* Long highlight lists show their first points; the script adds the "Show more" button */
+.highlights.clamped > li:nth-child(n+3) { display: none; }
+.highlights.has-more { margin-bottom: 12px; }
+.more-toggle {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 22px; padding: 0;
+  border: 0; background: none; color: var(--accent); font: 600 15px "Inter", sans-serif; cursor: pointer;
+}
+.more-toggle:hover { text-decoration: underline; }
+.more-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+.more-toggle::after {
+  content: ""; width: 6px; height: 6px;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg); transition: transform .2s;
+}
+.more-toggle[aria-expanded="true"]::after { transform: translateY(1px) rotate(-135deg); }
+
 .links a { font-weight: 600; color: var(--accent); text-decoration: none; }
 .links a:hover { text-decoration: underline; }
 
@@ -206,6 +225,12 @@ img, svg { display: block; max-width: 100%; }
   transition: transform .2s;
 }
 .project-shot a:hover img { transform: scale(1.015); }
+
+/* Charts exported with a white background are inverted in dark mode; the hue turn keeps the line blue */
+:root[data-theme="dark"] .chart-img { filter: invert(.9) hue-rotate(180deg); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chart-img { filter: invert(.9) hue-rotate(180deg); }
+}
 
 .tags li.tag-ai { background: var(--warm); color: var(--on-warm); }
 
@@ -398,7 +423,8 @@ img, svg { display: block; max-width: 100%; }
   .course-list li:nth-last-child(2):nth-child(odd), .course-list li:nth-last-child(2):nth-child(even) { border-bottom: 1px solid var(--line); }
   .project, .project.reverse, .project:has(.project-shot), .project.reverse:has(.project-shot) { grid-template-columns: 1fr; }
   .project.reverse .project-art { order: 0; }
-  .project-art { padding: 24px; }
+  .project-art { padding: 24px; place-items: center; }
+  .project-art > * { position: static; }
   .project-art svg { max-width: 420px; }
   .ai-grid { grid-template-columns: 1fr; }
   .athlete { grid-template-columns: 1fr; padding: 28px 22px; gap: 28px; }

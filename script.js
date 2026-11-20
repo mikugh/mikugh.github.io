@@ -111,6 +111,30 @@ document.addEventListener('click', (e) => {
 });
 window.addEventListener('hashchange', () => openSectionFor(location.hash));
 
+// Long highlight lists in project cards show their first two points behind a "Show more"
+// button. Without this script every point simply shows.
+const main = document.querySelector('main');
+document.querySelectorAll('.project .highlights').forEach((list, i) => {
+  const count = list.children.length;
+  if (count < 4) return;
+  list.id = list.id || `highlights-${i}`;
+  list.classList.add('clamped', 'has-more');
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'more-toggle';
+  button.setAttribute('aria-expanded', 'false');
+  button.setAttribute('aria-controls', list.id);
+  // Labels come from the page so each language version can use its own words
+  const label = (open) => (open ? main.dataset.lessLabel : `${main.dataset.moreLabel} (${count - 2})`);
+  button.textContent = label(false);
+  button.addEventListener('click', () => {
+    const open = list.classList.toggle('clamped') === false;
+    button.setAttribute('aria-expanded', String(open));
+    button.textContent = label(open);
+  });
+  list.after(button);
+});
+
 // Fade cards in as they scroll into view. Whole sections are never hidden, so if this
 // script fails or a browser runs an old copy of it, headings and text still show.
 const targets = document.querySelectorAll('.project, .edu-card, .ai-card, .skill-group, .athlete');

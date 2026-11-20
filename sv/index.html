@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
   <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
   <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
-  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="../style.css?v=5">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -47,7 +47,7 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" data-more-label="Visa mer" data-less-label="Visa mindre">
     <!-- HERO -->
     <section class="hero wrap">
       <div class="hero-text">
@@ -151,7 +151,7 @@
 
       <article class="project reverse">
         <div class="project-art project-shot">
-          <img src="../ppg-raw-vs-processed.jpg" alt="En 10 sekunder lång PPG-mätning före och efter filtrering" width="1000" height="801" loading="lazy">
+          <img src="../ppg-raw-vs-processed.jpg" class="chart-img" alt="En 10 sekunder lång PPG-mätning före och efter filtrering" width="1000" height="801" loading="lazy">
         </div>
         <div class="project-body">
           <p class="project-kicker">Maskininlärning · Åbo universitet</p>
@@ -163,9 +163,9 @@
           </p>
           <ul class="highlights">
             <li><strong>Data:</strong> 29&nbsp;599 PPG-segment på 10 sekunder vid 125&nbsp;Hz, uppdelade i 23&nbsp;675 för träning och 5&nbsp;924 för testning.</li>
+            <li><strong>Modeller:</strong> stödvektorregression och gradient boosting. Det bästa medelabsolutfelet var 19,2&nbsp;mmHg för systoliskt och 7,5&nbsp;mmHg för diastoliskt tryck.</li>
             <li><strong>Förbehandling</strong> i Python: ett Butterworth-bandpassfilter, wavelet-baserad brusreducering och gaussisk utjämning.</li>
             <li><strong>23 framtagna särdrag</strong> per segment: pulsform (systolisk och diastolisk amplitud, augmentationsindex, stig- och falltid, dikrotisk incisur), statistik (skevhet, kurtosis, entropi), frekvenssärdrag och signalderivator.</li>
-            <li><strong>Modeller:</strong> stödvektorregression och gradient boosting. Det bästa medelabsolutfelet var 19,2&nbsp;mmHg för systoliskt och 7,5&nbsp;mmHg för diastoliskt tryck.</li>
             <li><strong>Ärlig utvärdering:</strong> förutsägelserna höll sig nära medelvärdet, med ett konkordansindex på cirka 0,5, så modellerna hade inte lärt sig variationen mellan mätningarna. Jag spårade de troliga orsakerna till särdragen, modellernas komplexitet och signalkvaliteten, och testade andra särdragsuppsättningar, modeller och förbehandlingar.</li>
           </ul>
           <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>SciPy</li><li>Signalbehandling</li><li>Biosignalanalys</li><li>Särdragsutvinning</li></ul>
@@ -490,6 +490,6 @@
     <a href="#top">Till toppen ↑</a>
   </footer>
 
-  <script src="../script.js?v=4"></script>
+  <script src="../script.js?v=5"></script>
 </body>
 </html>

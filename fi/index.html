@@ -13,7 +13,7 @@
   <link rel="alternate" hreflang="sv" href="https://mikugh.github.io/sv/">
   <link rel="alternate" hreflang="fi" href="https://mikugh.github.io/fi/">
   <link rel="alternate" hreflang="x-default" href="https://mikugh.github.io/">
-  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="../style.css?v=5">
   <script>
     // Apply the saved theme before first paint to avoid a flash
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -47,7 +47,7 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" data-more-label="Näytä lisää" data-less-label="Näytä vähemmän">
     <!-- HERO -->
     <section class="hero wrap">
       <div class="hero-text">
@@ -151,7 +151,7 @@
 
       <article class="project reverse">
         <div class="project-art project-shot">
-          <img src="../ppg-raw-vs-processed.jpg" alt="10 sekunnin PPG-mittaus ennen suodatusta ja sen jälkeen" width="1000" height="801" loading="lazy">
+          <img src="../ppg-raw-vs-processed.jpg" class="chart-img" alt="10 sekunnin PPG-mittaus ennen suodatusta ja sen jälkeen" width="1000" height="801" loading="lazy">
         </div>
         <div class="project-body">
           <p class="project-kicker">Koneoppiminen · Turun yliopisto</p>
@@ -163,9 +163,9 @@
           </p>
           <ul class="highlights">
             <li><strong>Data:</strong> 29&nbsp;599 kymmenen sekunnin PPG-segmenttiä 125&nbsp;Hz:n näytteenottotaajuudella, jaettuna 23&nbsp;675 opetus- ja 5&nbsp;924 testisegmenttiin.</li>
+            <li><strong>Mallit:</strong> tukivektoriregressio ja gradienttitehostus (gradient boosting). Paras keskimääräinen absoluuttinen virhe oli 19,2&nbsp;mmHg systoliselle ja 7,5&nbsp;mmHg diastoliselle paineelle.</li>
             <li><strong>Esikäsittely</strong> Pythonilla: Butterworth-kaistanpäästösuodatin, aallokepohjainen kohinanpoisto ja Gaussin tasoitus.</li>
             <li><strong>23 piirrettä</strong> segmenttiä kohden: pulssin muoto (systolinen ja diastolinen amplitudi, augmentaatioindeksi, nousu- ja laskuaika, dikroottinen lovi), tilastolliset tunnusluvut (vinous, huipukkuus, entropia), taajuuspiirteet ja signaalin derivaatat.</li>
-            <li><strong>Mallit:</strong> tukivektoriregressio ja gradienttitehostus (gradient boosting). Paras keskimääräinen absoluuttinen virhe oli 19,2&nbsp;mmHg systoliselle ja 7,5&nbsp;mmHg diastoliselle paineelle.</li>
             <li><strong>Rehellinen arviointi:</strong> ennusteet pysyivät lähellä keskiarvoa, ja konkordanssi-indeksi oli noin 0,5, joten mallit eivät olleet oppineet mittausten välistä vaihtelua. Jäljitin todennäköiset syyt piirteisiin, mallien monimutkaisuuteen ja signaalin laatuun, ja kokeilin muita piirrejoukkoja, malleja ja esikäsittelyjä.</li>
           </ul>
           <ul class="tags"><li>Python</li><li>scikit-learn</li><li>pandas</li><li>SciPy</li><li>Signaalinkäsittely</li><li>Biosignaalianalyysi</li><li>Piirteiden muodostus</li></ul>
@@ -490,6 +490,6 @@
     <a href="#top">Takaisin ylös ↑</a>
   </footer>
 
-  <script src="../script.js?v=4"></script>
+  <script src="../script.js?v=5"></script>
 </body>
 </html>
