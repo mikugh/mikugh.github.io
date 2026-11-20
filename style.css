@@ -138,7 +138,13 @@ img, svg { display: block; max-width: 100%; }
   color: var(--accent);
 }
 .hero h1 { font-size: clamp(36px, 4.8vw, 58px); letter-spacing: -.02em; }
+.tagline {
+  margin: 14px 0 0; text-wrap: balance;
+  font: 500 clamp(20px, 2.4vw, 26px)/1.3 "Space Grotesk", "Inter", sans-serif;
+  letter-spacing: -.01em; color: var(--accent);
+}
 .lead { font-size: clamp(18px, 2vw, 20px); color: var(--muted); max-width: 60ch; margin: 28px 0 36px; }
+.tagline + .lead { margin-top: 20px; }
 
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .btn {
@@ -338,10 +344,9 @@ img, svg { display: block; max-width: 100%; }
 .skill-group .tags { margin: 0; }
 
 /* Contact */
-.contact { text-align: center; padding-bottom: 96px; }
+.contact { padding-bottom: 96px; }
 .contact .section-title { margin-bottom: 16px; }
-.contact-lead { color: var(--muted); font-size: 19px; margin: 0 0 28px; }
-.contact .cta { justify-content: center; }
+.contact-lead { color: var(--muted); font-size: 19px; max-width: 64ch; margin: 0 0 28px; }
 .contact-email { display: inline-block; margin-top: 8px; color: var(--accent); font-weight: 600; text-decoration: none; word-break: break-all; }
 .contact-email:hover { text-decoration: underline; }
 
